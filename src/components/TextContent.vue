@@ -2,17 +2,19 @@
     {{ props.content }}
 </template>
 
-<script>
-export default {
-    props: ['content'],
-    setup(props) {
-        console.log(props.content)
+<script setup>
+
+const props = defineProps(['content']);
+// export default {
+//     props: ['content'],
+//     setup(props) {
+//         console.log(props.content)
         
-        return {
-            props
-        }
-    }
-}
+//         return {
+//             props
+//         }
+//     }
+// }
 </script>
 
 <style>
